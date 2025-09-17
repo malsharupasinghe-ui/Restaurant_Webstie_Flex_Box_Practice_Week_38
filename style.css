@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+.navigation {
+    height: 96px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* logo left, links right */
+  align-items: center;
+  padding: 0 5%;
+  background-color: #b3cad0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky; /* stays on top when scrolling */
+  top: 0;
+  z-index: 1000;
+
+}
+
+/* Logo */
+.logo img {
+  height: 150px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #d35400; /* accent color */
+}
+
+/* Sections (for spacing and readability) */
+section {
+  padding: 100px 5%;
+  min-height: 100vh;
+  text-align:justify;
+  line-height: 1.5;
+}
+
+section:nth-child(even) {
+  background-color: #f9f9f9;
+}
